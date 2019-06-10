@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(19, 19, 19);
+}
+.radar{
+    height: 0;
+}
+#user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin: auto;
+    margin-top: 80px;
+    background-image: url(/images/IMG_1322.jpg);
+    background-position: center center;
+    background-size: contain;
+}
+#ring-1{
+    height: 100px;
+    width: 100px;
+    border: 5px solid rgba(137, 43, 226, 0.767);
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    bottom: 105px;
+}
+#ring-2{
+    height: 200px;
+    width: 200px;
+    border: 5px solid rgba(137, 43, 226, 0.514);
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    bottom: 265px;
+}
+#ring-3{
+    height: 350px;
+    width: 350px;
+    border: 5px solid rgba(137, 43, 226, 0.253);
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    bottom: 545px;
+}
+
+.packet{
+    height: 140px;
+    margin-left: 40px;
+}
+.cardfront {
+    width: 100px;
+    height: 0px;
+    border-left: 60px solid transparent;
+    border-top: 60px solid red;
+    border-right: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    left: 50px;
+    display: block;
+  }
+.cardimg {
+    width: 180px;
+    height: 100px;
+    position: relative;
+    background-color: yellow;
+    bottom: -109px;
+    left: 25px;
+  }
+  .cardback {
+    width: 85px;
+    height: 85px;
+    background-color: blue;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    position: relative;
+    bottom: -202px;
+    left:10px;
+  }
