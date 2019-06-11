@@ -1,8 +1,16 @@
 body{
     background-color: rgb(19, 19, 19);
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans' , sans-serif;
+}
+h1, h2, h3, h4{
+    padding: 0;
+    margin: 0;
 }
 .radar{
     height: 0;
+    width: 100%;
 }
 #user{
     height: 100px;
@@ -10,7 +18,7 @@ body{
     border-radius: 50%;
     background-color: red;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 200px;
     background-image: url(/images/IMG_1322.jpg);
     background-position: center center;
     background-size: contain;
@@ -18,65 +26,180 @@ body{
 #ring-1{
     height: 100px;
     width: 100px;
-    border: 5px solid rgba(137, 43, 226, 0.767);
+    border: 5px solid rgba(137, 43, 226, 0.452);
     border-radius: 50%;
     position: relative;
     margin: auto;
     bottom: 105px;
+    animation: fadeInOut1 8s ease-in-out forwards infinite;
 }
 #ring-2{
     height: 200px;
     width: 200px;
-    border: 5px solid rgba(137, 43, 226, 0.514);
+    border: 5px solid rgba(137, 43, 226, 0.295);
     border-radius: 50%;
     position: relative;
     margin: auto;
     bottom: 265px;
+    animation: fadeInOut2 8s ease-in-out forwards infinite;
 }
 #ring-3{
-    height: 350px;
-    width: 350px;
-    border: 5px solid rgba(137, 43, 226, 0.253);
+    height: 300px;
+    width: 300px;
+    border: 5px solid rgba(137, 43, 226, 0.171);
     border-radius: 50%;
     position: relative;
     margin: auto;
-    bottom: 545px;
+    bottom: 525px;
+    animation: fadeInOut3 8s ease-in-out forwards infinite;
 }
 
+@keyframes fadeInOut1 {
+    0% { opacity: 0 }
+    5% { opacity: 1 }
+    14% {opacity: 1 }
+    16% { opacity: 0 }
+}
+
+@keyframes fadeInOut2 {
+    0% { opacity: 0 }
+    14% {opacity: 1 }
+    16% { opacity: 1 }
+    30% { opacity: 1 }
+    33% { opacity: 0 }
+}
+
+@keyframes fadeInOut3 {
+    0% { opacity: 0 }
+    30% {opacity: 1 }
+    33% {opacity: 1 }
+    46% { opacity: 0 }
+    48% { opacity: 0 }
+}
 .packet{
     height: 140px;
-    margin-left: 40px;
+    margin-left: 90px;
+    width: 250px;
+    margin-bottom: 20px;
 }
-.cardfront {
-    width: 100px;
-    height: 0px;
-    border-left: 60px solid transparent;
-    border-top: 60px solid red;
-    border-right: 60px solid red;
-    border-bottom: 60px solid red;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+#card1-front {
+    background-image: linear-gradient(to right, rgb(126, 203, 255), rgb(56, 255, 189));
+}
+#card2-front {
+    background-image: linear-gradient(to right, rgb(255, 185, 56), rgb(255, 242, 126));
+}
+#card3-front {
+    background-image: linear-gradient(to right,  rgb(138, 75, 255),rgb(193, 126, 255));
+}
+#card4-front {
+    background-image: linear-gradient(to right, rgb(126, 203, 255), rgb(56, 255, 189));
+}
+#card5-front {
+    background-image: linear-gradient(to right, rgb(255, 80, 133), rgb(255, 126, 216));
+}
+#card6-front {
+    background-image: linear-gradient(to right,  rgb(138, 75, 255),rgb(193, 126, 255));
+}
+#card7-front {
+    background-image: linear-gradient(to right, rgb(255, 185, 56), rgb(255, 242, 126));
+}
+#card8-front {
+    background-image: linear-gradient(to right, rgb(126, 203, 255), rgb(56, 255, 189));
+}
+#card9-front {
+    background-image: linear-gradient(to right, rgb(255, 80, 133), rgb(255, 126, 216));
+}
+#card1-img{
+    background-image: url(/images/person1.jpeg);
+}
+#card2-img{
+    background-image: url(/images/person2.jpeg);
+}
+#card3-img{
+    background-image: url(/images/person3.jpeg);
+}
+#card4-img{
+    background-image: url(/images/person4.jpeg);
+}
+#card5-img{
+    background-image: url(/images/person5.jpeg);
+}
+#card6-img{
+    background-image: url(/images/person6.jpeg);
+}
+#card7-img{
+    background-image: url(/images/person7.jpeg);
+}
+#card8-img{
+    background-image: url(/images/person8.jpeg);
+}
+#card9-img{
+    background-image: url(/images/person9.jpeg);
+}
+.cardwrap{
+    filter: drop-shadow(-3px 0px 6px #000000);
+}
+.cardfront{
     position: relative;
-    left: 50px;
-    display: block;
-  }
+    height: 140px;
+    width: 100%;
+    background: rgb(17, 168, 255);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+    border-radius: 5px;
+    bottom: 25px;
+    text-align: right;
+}
+.cardfront h2, h3, ul{
+    margin-right: 20px;
+}
+.cardfront h2{
+    padding-top: 8px;
+    font-weight: bold;
+}
+.cardfront h3{
+    font-style: oblique;
+    color: rgb(31, 25, 25);
+}
+.cardfront ul{
+    list-style: none;
+    margin-top: 4px;
+    font-size: 14px;
+}
 .cardimg {
-    width: 180px;
-    height: 100px;
+    width: 150px;
+    height: 125px;
     position: relative;
-    background-color: yellow;
+    background-color: rgb(0, 0, 0);
+    background-image: url(/images/IMG_1322.jpg);
+    background-size: contain;
     bottom: -109px;
-    left: 25px;
-  }
-  .cardback {
-    width: 85px;
-    height: 85px;
-    background-color: blue;
+    left: 0px;
+    filter: drop-shadow(-1px 0px 5px #000000);
+}
+.cardback {
+    width: 98px;
+    height: 98px;
+    background-color: rgb(112, 112, 112);
     border-radius: 5px;
     transform: rotate(45deg);
     position: relative;
-    bottom: -202px;
-    left:10px;
-  }
+    bottom: -220px;
+    left:-45px;
+}
+.cardimg.animate {
+    animation: moveLeft 1s ease-in-out forwards;
+}
+@keyframes moveLeft {
+    0% {left: 0px}
+    100% {left: -50px}
+}
+.cardimg.reset {
+    animation: moveBack 1s ease-in-out forwards;
+}
+@keyframes moveBack {
+    0% {left: -50px}
+    100% {left: 0px}
+    
+}
+
+
