@@ -2,9 +2,9 @@ let $window = $(window);
 let $elem = $(".cardimg")
 let docViewTop = $window.scrollTop();
 let docViewBottom = docViewTop + $window.height();
-
 let elemTop = $elem.offset().top;
 let elemBottom = elemTop + $elem.height();
+
 
 function isScrolledIntoView() {
 
