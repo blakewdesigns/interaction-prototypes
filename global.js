@@ -21,3 +21,13 @@ $window.scroll(function(){
         $elem.addClass("reset")
     }
 })
+
+$('#toggle').change(function(){
+    if($(this).is(":checked")) {
+        $('.user').addClass('user--ghost');
+        console.log("checked")
+    } else {
+        $('.user').removeClass('user--ghost');
+        console.log("not checked")
+    }
+});

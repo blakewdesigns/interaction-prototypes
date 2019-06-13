@@ -58,12 +58,14 @@ h1, h2, h3, h4{
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: red;
     margin: auto;
     margin-top: 200px;
-    background-image: url(/images/IMG_1322.jpg);
+    background-image: url(/images/user.jpg);
     background-position: center center;
     background-size: contain;
+}
+.user--ghost{
+    background-image: url(/images/user-ghost.png);
 }
 .ring-1{
     height: 100px;
