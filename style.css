@@ -137,6 +137,7 @@ h1, h2, h3, h4{
     75% { opacity: 1 }
     100% {opacity: 0}
 }
+
 .packet{
     height: 140px;
     margin-left: 90px;
@@ -250,6 +251,7 @@ h1, h2, h3, h4{
 .cardimg.animate {
     animation: moveLeft 1s ease-in-out forwards;
 }
+
 @keyframes moveLeft {
     0% {left: 0px}
     100% {left: -50px}
@@ -260,7 +262,6 @@ h1, h2, h3, h4{
 @keyframes moveBack {
     0% {left: -50px}
     100% {left: 0px}
-    
 }
 
 
